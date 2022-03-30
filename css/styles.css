@@ -114,7 +114,7 @@ img {
 /* SITE-HEADER  */
 .top-color {
   background-color: #F3D7B7;
-  background-image: url(../img/bijr-bijr.jpg);
+  background-image: url(../img/main-watermark.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -194,6 +194,7 @@ img {
   display: flex;
   margin-right: auto;
   padding-left: 130px;
+  margin-bottom: 20px;
 }
 
 .wrapper{
@@ -224,4 +225,80 @@ img {
   height: 696px;
   object-fit: cover;
   margin-right: -50px;
+}
+
+
+/* HERO-ONE  */
+.hero-one {
+  background-color: #F8F8F2;
+  background-image: url(../img/hero-one-bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.hero-one-main-heading {
+  margin: 0;
+  padding-top: 50px;
+  margin-bottom: 80px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: normal;
+  font-weight: 700;
+  color: #000;
+}
+
+.hero-one-list {
+  width: 100%;
+  max-width: 1114px;
+  padding-bottom: 50px;
+  list-style: none;
+}
+
+.hero-one-list-item {
+  display: flex;
+  align-items: center;
+}
+
+.type_one {
+}
+.hero-one-coffee-pc {
+}
+.hero-one-text-content {
+}
+
+.hero-one-name-of-coffee {
+  margin: 0;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.hero-one-coffee-paragraph {
+  width: 453px;
+}
+
+.type_two {
+}
+
+
+
+
+
+
+/* RETINA-BG  */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  .top-color {
+    background-image: url(../img/main-watermark@2x.jpg);
+  }
+
+  .hero-one {
+    background-image: url(../img/hero-one-bg@2x.jpg);
+  }
 }
