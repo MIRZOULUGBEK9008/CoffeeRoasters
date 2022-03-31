@@ -313,12 +313,8 @@ img {
 
 /* HERO-TWO  */
 .hero-two {
-  background-color: #C99B67;
   background-image: url(../img/site-bg/hero-two.jpg);
-  background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 289px;
 }
 
 .hero-two-content {
@@ -329,6 +325,8 @@ img {
   margin: 0;
   padding-top: 50px;
   margin-bottom: 10px;
+  font-size: 50px;
+  line-height: 59px;
   color: #fff;
   text-transform: uppercase;
   text-align: center;
@@ -359,9 +357,6 @@ img {
   margin-bottom: 80px;
 }
 
-.hero-two-list-item {
-  margin-bottom: -201px;
-}
 
 .hero-two-list-item:not(:last-child) {
   margin-right: 20px;
