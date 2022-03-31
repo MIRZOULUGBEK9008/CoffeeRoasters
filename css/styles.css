@@ -154,7 +154,7 @@ img {
 
 .site-header-list {
   flex-wrap: nowrap;
-  flex-shrink: 0;
+  white-space: nowrap;
   margin: 0;
   padding: 0;
   list-style: none;
