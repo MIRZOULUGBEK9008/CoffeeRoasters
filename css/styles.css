@@ -75,10 +75,12 @@ img {
 }
 
 .main-button {
-  display: block;
-  max-width: 193px;
+  display: inline-block;
   padding-top: 16px;
   padding-bottom: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  letter-spacing: 1px;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
@@ -88,7 +90,6 @@ img {
   font-size: 16px;
   line-height: normal;
   font-weight: 500;
-  letter-spacing: 1px;
   transition: opacity 0.3s ease;
 }
 
@@ -543,6 +544,10 @@ img {
 
 .footer-social-media-links:active {
   opacity: 0.6;
+}
+
+.site-header-list-item-link-footer {
+  font-size: 16px;
 }
 
 
