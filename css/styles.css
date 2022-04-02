@@ -116,9 +116,6 @@ img {
 .top-color {
   background-color: #F3D7B7;
   background-image: url(../img/site-bg/main-watermark.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 /* SITE-LOGO */
@@ -265,9 +262,11 @@ img {
 .hero-one-list-item {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .hero-one-coffee-pc {
+  flex-shrink: 0;
   width: 450px;
   height: 375px;
   object-fit: cover;
@@ -498,9 +497,12 @@ img {
 }
 
 .main-button-two {
-  margin-right: auto;
-  margin-left: auto;
   background-color: #C99B67;
+}
+
+.button-two-wrapper {
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -535,11 +537,11 @@ img {
 }
 
 .footer-social-media-links {
-  transition: opacity 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .footer-social-media-links:hover {
-  opacity: 0.8;
+  color: #C99B67;
 }
 
 .footer-social-media-links:active {
@@ -550,6 +552,17 @@ img {
   font-size: 16px;
 }
 
+
+
+/* ABOUT US  */
+.main-hero-paragraph-about-us {
+  width: 372px;
+}
+
+.main-img-about-us {
+  width: 710px;
+  height: 596px;
+}
 
 
 
