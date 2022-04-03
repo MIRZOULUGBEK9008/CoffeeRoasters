@@ -537,11 +537,11 @@ img {
 }
 
 .footer-social-media-links {
-  transition: color 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 .footer-social-media-links:hover {
-  color: #C99B67;
+  opacity: 0.8;
 }
 
 .footer-social-media-links:active {
@@ -557,13 +557,87 @@ img {
 /* ABOUT US  */
 .main-hero-paragraph-about-us {
   width: 372px;
+  margin: 0;
 }
 
 .main-img-about-us {
-  width: 710px;
   height: 596px;
 }
 
+
+/* HERO-ONE  */
+.hero-one-about-us {
+  box-shadow: none;
+}
+
+.wrapper-about-us {
+  margin-right: 280px;
+}
+
+.hero-one-about-us-wrapper {
+  display: flex;
+  align-items: center;
+  padding-left: 165px;
+  padding-right: 64px;
+  padding-top: 160px;
+  padding-bottom: 200px;
+  margin-bottom: 80px;
+  box-shadow: none;
+}
+
+.hero-one-img-about-us {
+  width: 360px;
+  height: 364px;
+  object-fit: cover;
+}
+
+.hero-one-text-wrapper-about-us {
+  padding-left: 185px;
+}
+
+.hero-one-main-heading-about-us {
+  margin: 0;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.hero-one-main-paragraph-about-us {
+  margin: 0;
+  width: 626px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+/* HERO-TWO  */
+.hero-two-about-us {
+  padding-top: 100px;
+  padding-bottom: 90px;
+  padding-left: 143px;
+  padding-right: 30px;
+}
+
+.hero-two-wrapper {
+  display: flex;
+}
+
+.hero-two-main-heading-about-us {
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.hero-two-main-paragraph-about-us {
+  width: 639px;
+  text-align: left;
+  font-size: 18px;
+  line-height: 30px;
+  margin-right: 38px;
+}
+
+.hero-two-list-item-img-about-us {
+  width: 550px;
+  height: 500px;
+  object-fit: cover;
+}
 
 
 /* RETINA-BG  */
