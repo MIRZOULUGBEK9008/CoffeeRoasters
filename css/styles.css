@@ -640,6 +640,90 @@ img {
 }
 
 
+/* HERO-THREE  */
+.hero-three-about-us {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.hero-two-main-heading-hero-three {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 80px;
+}
+
+.hero-three-country-list-about-us {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hero-three-list-item-about-us::before{
+  display: none;
+}
+
+.hero-three-list-item-about-us {
+  padding-top: 45px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 55px;
+}
+
+.country-list-item-content {
+}
+.country-list-item-content-uk {
+  background-image: url(../img/about-us-img/countries/UK.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.country-list-item-content-canada {
+  background-image: url(../img/about-us-img/countries/Canada.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.country-list-item-content-australia {
+  background-image: url(../img/about-us-img/countries/Australia.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.hero-three-list-item-heading-about-us {
+  margin: 0;
+  margin-bottom: 10px;
+  padding-top: 105px;
+}
+
+.hero-three-list-item-heading-about-us-canada {
+  padding-top: 155px;
+}
+
+.hero-three-list-item-heading-about-us-australia {
+  padding-top: 155px;
+}
+
+.country-info-wrapper {
+  width: 141px;
+}
+
+.country-info-wrapper-canada {
+  width: 178px;
+}
+
+.country-info-wrapper-australia {
+  width: 156px;
+}
+
+.country-info {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+
 /* RETINA-BG  */
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -663,4 +747,16 @@ only screen and (                min-resolution: 2dppx) {
   .hero-three {
     background-image: url(../img/site-bg/hero-three@2x.jpg);
   }
-}
+
+  .country-list-item-content-uk {
+    background-image: url(../img/about-us-img/countries/UK@2x.png);
+  }
+
+  .country-list-item-content-canada {
+    background-image: url(../img/about-us-img/countries/Canada@2x.png);
+    5
+
+    .country-list-item-content-australia {
+      background-image: url(../img/about-us-img/countries/Australia@2x.png);
+    }
+  }
