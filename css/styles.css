@@ -741,6 +741,7 @@ img {
 
 .form-wrapper {
   display: flex;
+  margin-bottom: 100px;
 }
 
 .create-plan-ordered-list {
@@ -792,6 +793,8 @@ img {
 .question-wrapper {
   display: flex;
   align-items: baseline;
+  cursor: pointer;
+
 }
 
 .question-heading {
@@ -828,10 +831,11 @@ img {
 }
 .option-list-item {
   flex-grow: 1;
+  min-height: 220px;
+  width: 208px;
   padding: 0;
   margin: 0;
   list-style: none;
-  width: 208px;
   background-image: url(../img/card-box-bg.jpg);
   background-position: center center;
 }
@@ -850,12 +854,7 @@ img {
 .choose-type-wrapper {
   flex-grow: 1;
   padding-top: 30px;
-  padding-bottom: 80px;
   padding-left: 16px;
-}
-
-.choose-type-wrapper:hover {
-  color: #fff;
 }
 
 .choose-of-types {
@@ -866,7 +865,6 @@ img {
   font-size: 24px;
   line-height: normal;
   font-weight: 500;
-  color: #333;
 }
 
 .choose-of-types:hover {
@@ -878,6 +876,46 @@ img {
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
+}
+
+.plan-info-wrapper {
+  width: 660px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 21px;
+  padding-right: 21px;
+  margin-bottom: 20px;
+  background-color: #C99B67;
+  color: #fff;
+}
+
+.order-summary {
+  margin-bottom: 14px;
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.info-main-wrapper {
+  display: flex;
+  justify-content: end;
+}
+
+.plan-info-text {
+  margin: 0;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 500;
+}
+
+.black-text {
+  color: #000;
+}
+
+.button-wrapper-two {
+  display: flex;
+  justify-content: end;
 }
 
 
