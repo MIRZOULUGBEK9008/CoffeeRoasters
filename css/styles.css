@@ -827,6 +827,7 @@ img {
   display: flex;
 }
 .option-list-item {
+  flex-grow: 1;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -858,7 +859,6 @@ img {
 }
 
 .choose-of-types {
-  flex-grow: 1;
   padding: 0;
   margin: 0;
   margin-bottom: 10px;
