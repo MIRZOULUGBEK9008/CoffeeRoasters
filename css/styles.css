@@ -729,6 +729,157 @@ img {
   margin-bottom: 20px;
 }
 
+/* MAIN-FORM  */
+.hero-one-create-plan-wrapper {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 144px;
+  padding-left: 30px;
+  margin-bottom: 50px;
+  box-shadow: none;
+}
+
+.form-wrapper {
+  display: flex;
+}
+
+.create-plan-ordered-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-right: auto;
+}
+
+.create-plan-list-item {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  padding-left: 25px;
+}
+
+.card-box-item:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.create-plan-list-item:not(:last-child) {
+  margin-bottom: 33px;
+}
+
+.form-links {
+  padding-bottom: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 28px;
+  line-height: normal;
+  font-weight: 500;
+  color: #555;
+  transition: color 0.3s ease;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.form-links:hover {
+  color: #000;
+  border-bottom: 3px dashed #C99B67;
+}
+
+.tipo-card-box-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.question-wrapper {
+  display: flex;
+  align-items: baseline;
+}
+
+.question-heading {
+  color: #000;
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: normal;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 20px;
+  margin-right: 44px;
+}
+
+.up-down-button {
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0px;
+}
+
+.up-down-button:focus {
+  outline: none;
+}
+
+.up-down-img {
+  width: 40px;
+  height: 40px;
+}
+
+.choose-option-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.option-list-item {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 208px;
+  background-image: url(../img/card-box-bg.jpg);
+  background-position: center center;
+}
+
+.option-list-item:hover {
+  background-image: none;
+  background-color: #0A775F;
+  color: #fff;
+  transition: all 0.4s ease;
+}
+
+.option-list-item:not(:last-child) {
+  margin-right: 18px;
+}
+
+.choose-type-wrapper {
+  flex-grow: 1;
+  padding-top: 30px;
+  padding-bottom: 80px;
+  padding-left: 16px;
+}
+
+.choose-type-wrapper:hover {
+  color: #fff;
+}
+
+.choose-of-types {
+  flex-grow: 1;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: normal;
+  font-weight: 500;
+  color: #333;
+}
+
+.choose-of-types:hover {
+  color: #fff;
+}
+
+.coffee-description {
+  margin: 0;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
 
 /* RETINA-BG  */
 @media
@@ -764,5 +915,9 @@ only screen and (                min-resolution: 2dppx) {
 
     .country-list-item-content-australia {
       background-image: url(../img/about-us-img/countries/Australia@2x.png);
+    }
+
+    .option-list-item {
+      background-image: url(../img/card-box-bg@2x.jpg);
     }
   }
