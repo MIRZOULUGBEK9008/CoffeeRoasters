@@ -56,6 +56,7 @@ body {
   line-height: 34px;
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 
 img {
@@ -219,6 +220,21 @@ img {
   line-height: 24px;
 }
 
+.badge-img-wrapper {
+  display: flex;
+  position: relative;
+}
+
+.badge-img {
+  position: absolute;
+  top: -80px;
+  left: 0;
+  transform: translateX(-50%);
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+}
+
 .main-img {
   width: 710px;
   height: 696px;
@@ -229,6 +245,7 @@ img {
 
 /* HERO-ONE  */
 .hero-one {
+  position: relative;
   background-color: #F8F8F2;
   background-image: url(../img/site-bg/hero-one-bg.jpg);
   background-position: center center;
@@ -249,6 +266,27 @@ img {
   line-height: normal;
   font-weight: bold;
   color: #000;
+}
+
+.leaf-icon_one {
+  position: absolute;
+  top: 85px;
+  left: 0;
+  transform: translateX(-50%);
+}
+
+.leaf-icon_two {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateX(50%);
+}
+
+.leaf-icon_three {
+  position: absolute;
+  left: 0;
+  bottom: 187px;
+  transform: translateX(-50%);
 }
 
 .hero-one-list {
@@ -314,8 +352,15 @@ img {
 
 /* HERO-TWO  */
 .hero-two {
+  position: relative;
   background-image: url(../img/site-bg/hero-two.jpg);
   background-repeat: no-repeat;
+}
+
+.badge-choose {
+  position: absolute;
+  top: 233px;
+  transform: translateX(-15%);
 }
 
 .hero-two-content {
@@ -392,6 +437,7 @@ img {
 
 /* HERO-THREE  */
 .hero-three {
+  position: relative;
   background-color: #0A775F;
   background-image: url(../img/site-bg/hero-three.jpg);
   background-position: center center;
@@ -402,6 +448,12 @@ img {
   padding-right: 31px;
   padding-bottom: 50px;
   padding-top: 50px;
+}
+
+.badge-works {
+  position: absolute;
+  top: 70px;
+  right: 83px;
 }
 
 .hero-thee-main-heading {
@@ -949,13 +1001,14 @@ only screen and (                min-resolution: 2dppx) {
 
   .country-list-item-content-canada {
     background-image: url(../img/about-us-img/countries/Canada@2x.png);
-    5
-
-    .country-list-item-content-australia {
-      background-image: url(../img/about-us-img/countries/Australia@2x.png);
-    }
-
-    .option-list-item {
-      background-image: url(../img/card-box-bg@2x.jpg);
-    }
   }
+
+  .country-list-item-content-australia {
+    background-image: url(../img/about-us-img/countries/Australia@2x.png);
+  }
+
+  .option-list-item {
+    background-image: url(../img/card-box-bg@2x.jpg);
+  }
+
+}
