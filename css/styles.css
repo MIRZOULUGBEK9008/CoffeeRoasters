@@ -629,14 +629,22 @@ img {
 }
 
 .hero-one-about-us-wrapper {
+  position: relative;
   display: flex;
   align-items: center;
   padding-left: 165px;
   padding-right: 64px;
   padding-top: 160px;
   padding-bottom: 200px;
-  margin-bottom: 80px;
+  margin-bottom: 160px;
   box-shadow: none;
+}
+
+.about-us-leaf-icon {
+  position: absolute;
+  left: 0;
+  top: 85px;
+  transform: translateX(-50%);
 }
 
 .hero-one-img-about-us {
@@ -671,6 +679,7 @@ img {
 }
 
 .hero-two-wrapper {
+  position: relative;
   display: flex;
 }
 
@@ -688,6 +697,9 @@ img {
 }
 
 .hero-two-list-item-img-about-us {
+  position: absolute;
+  right: 0;
+  top: -170px;
   width: 550px;
   height: 500px;
   object-fit: cover;
