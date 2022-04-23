@@ -48,7 +48,10 @@
             <h1 class="main-hero-heading">Create plan</h1>
             <p class="main-hero-paragraph main-hero-paragraph-about-us">Coffee the way you wanted it to be. For coffee delivered tomorrow, or next week. For whatever brew method you use. For choice, for convenience, for quality.</p>
           </div>
-          <img class="main-img main-img-about-us" src="img/main-img-create-plan.jpg" width="710" height="596" srcset="img/main-img-create-plan.jpg 1x, img/main-img-create-plan@2x.jpg 2x" alt="Image of Coffee">
+          <div class="badge-img-wrapper">
+            <img class="main-img main-img-about-us" src="img/main-img-create-plan.jpg" width="710" height="596" srcset="img/main-img-create-plan.jpg 1x, img/main-img-create-plan@2x.jpg 2x" alt="Image of Coffee">
+            <img class="badge-img" src="img/position-img/badge-img.png" width="160" height="160" srcset="img/position-img/badge-img.png 1x, img/position-img/badge-img@2x.png 2x" alt="Badge">
+          </div>
         </div>
       </div>
     </div>
@@ -70,7 +73,7 @@
           <!-- ONE  -->
           <li class="hero-three-list-item">
             <div class="hero-three-list-item-content">
-              <h3 class="hero-three-list-item-heading">Pick your   coffee</h3>
+              <h3 class="hero-three-list-item-heading">Pick your<br>coffee</h3>
               <p class="hero-three-content-description">Select from our evolving range of artisan coffees. Our beans are ethically sourced and we pay fair prices for them. There are new coffees in all profiles every month for you to try out.</p>
             </div>
           </li>
@@ -78,7 +81,7 @@
           <!-- TWO  -->
           <li class="hero-three-list-item">
             <div class="hero-three-list-item-content">
-              <h3 class="hero-three-list-item-heading">Choose the   frequency</h3>
+              <h3 class="hero-three-list-item-heading">Choose the frequency</h3>
               <p class="hero-three-content-description">Customize your order frequency, quantity, even your roast style and grind type. Pause, skip or cancel your subscription with no commitment through our online portal.</p>
             </div>
           </li>
@@ -86,7 +89,7 @@
           <!-- THREE  -->
           <li class="hero-three-list-item">
             <div class="hero-three-list-item-content">
-              <h3 class="hero-three-list-item-heading">Receive and   enjoy!</h3>
+              <h3 class="hero-three-list-item-heading">Receive and<br>enjoy!</h3>
               <p class="hero-three-content-description">We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning world-class coffees curated to provide a distinct tasting experience.</p>
             </div>
           </li>
@@ -100,181 +103,221 @@
     <!-- HERO-TWO  -->
     <div class="container">
       <div class="hero-one hero-one-create-plan-wrapper">
-
+        <img class="leaf-icon-create-plan create-plan-leaf" src="img/position-img/leaf-icon_2.svg" alt="leaf-icon_two">
+        <img class="leaf-icon-create-plan create-plan-leaf_two" src="img/position-img/leaf-icon_1.svg" alt="leaf-icon_one">
         <!-- MAIN-FORM  -->
+        <form class="create-plan-form" action="https://echo.htmlacademy.ru/" target="_blank" method="POST">
 
-        <form action="https://echo.htmlacademy.ru" method="post">
+          <!-- ID  -->
+          <ol class="create-plan-ordered-list" aria-hidden="true">
+            <li class="create-plan-list-item">
+              <a class="form-links" href="#preferences">01 Preferences</a>
+            </li>
+            <li class="create-plan-list-item">
+              <a class="form-links" href="#beantype">02 Bean Type</a>
+            </li>
+            <li class="create-plan-list-item">
+              <a class="form-links" href="#quantity">03 Quantity</a>
+            </li>
+            <li class="create-plan-list-item">
+              <a class="form-links" href="#grindoption">04 Grind Option</a>
+            </li>
+            <li class="create-plan-list-item">
+              <a class="form-links" href="#deliveries">05 Deliveries</a>
+            </li>
+          </ol>
 
-          <div class="form-wrapper">
-            <ol class="create-plan-ordered-list" aria-hidden="true">
-              <li class="create-plan-list-item">
-                <a class="form-links" href="#preferences">01 Preferences</a>
+          <div>
+
+            <ul class="label-list">
+
+              <li class="label-list-item">
+                <section class="checkbox-input-wrapper">
+                  <div class="btn-img-wrapper">
+                    <h3 class="checkbox-input-heading" id="beantype">How do you drink your coffee?</h3>
+                    <button class="arrows-button arrows-button_first" id="arrows-btn_one" type="button">
+                      <img src="img/up-down.svg" width="40" height="40" alt="">
+                    </button>
+                  </div>
+                  <div class="label-wrapper_one" id="label-wrapper-id_one">
+                    <label class="label-info">
+                      <input class="checkbox-input visually-hidden" type="checkbox" value="Capsule" name="type_of_drink" required checked>
+                      <span class="checkbox-input-inner">
+                        <span class="label-heading">Capsule</span>
+                        <span class="label-paragraph">Compatible with Nespresso systems and similar brewers</span>
+                      </span>
+                    </label>
+                    <label class="label-info">
+                      <input class="checkbox-input visually-hidden" type="checkbox" value="Filter" name="type_of_drink" required>
+                      <span class="checkbox-input-inner">
+                        <span class="label-heading">Filter</span>
+                        <span class="label-paragraph">For pour over or drip methods like Aeropress, Chemex, and V60</span>
+                      </span>
+                    </label>
+                    <label class="label-info">
+                      <input class="checkbox-input visually-hidden" type="checkbox" value="Espresso" name="type_of_drink" required>
+                      <span class="checkbox-input-inner">
+                        <span class="label-heading">Espresso</span>
+                        <span class="label-paragraph">Dense and finely<br>ground beans for an intense, flavorful experience</span>
+                      </span>
+                    </label>
+                  </div>
+                </section>
               </li>
-              <li class="create-plan-list-item">
-                <a class="form-links" href="#beantype">02 Bean Type</a>
+
+              <li class="label-list-item">
+                <section class="checkbox-input-wrapper">
+                  <div class="btn-img-wrapper">
+                    <h3 class="checkbox-input-heading" id="quantity">What type of coffee?</h3>
+                    <button class="arrows-button" id="arrows-btn_two" type="button">
+                      <img src="img/up-down.svg" width="40" height="40" alt="">
+                    </button>
+                  </div>
+                  <div class="label-wrapper" id="label-wrapper-id_two">
+                    <label class="label-info">
+                      <input class="checkbox-input visually-hidden" type="checkbox" value="Single Origin" name="type_of_coffee" required>
+                      <span class="checkbox-input-inner">
+                        <span class="label-heading">Single origin</span>
+                        <span class="label-paragraph">Distinct, high quality coffee from a specific family-owned farm</span>
+                      </span>
+                    </label>
+                    <label class="label-info">
+                      <input class="checkbox-input visually-hidden" type="checkbox" value="Decaf" name="type_of_coffee" required>
+                      <span class="checkbox-input-inner">
+                        <span class="label-heading">Decaf</span>
+                        <span class="label-paragraph">Just like regular<br>coffee, except the caffeine has been removed</span>
+                      </span>
+                    </label>
+                    <label class="label-info">
+                      <input class="checkbox-input visually-hidden" type="checkbox" value="Blended" name="type_of_coffee" required>
+                      <span class="checkbox-input-inner">
+                        <span class="label-heading">Blended</span>
+                        <span class="label-paragraph">Combination of two<br>or three dark roasted beans of organic coffees</span>
+                      </span>
+                    </label>
+                  </div>
+                </section>
               </li>
-              <li class="create-plan-list-item">
-                <a class="form-links" href="#quantity">03 Quantity</a>
+
+              <li class="label-list-item">
+                <section class="checkbox-input-wrapper">
+                  <div class="btn-img-wrapper">
+                    <h3 class="checkbox-input-heading" id="grindoption">How much would you like?</h3>
+                    <button class="arrows-button" id="arrows-btn_three" type="button">
+                      <img src="img/up-down.svg" width="40" height="40" alt="">
+                    </button>
+                  </div>
+                  <div class="label-wrapper" id="label-wrapper-id_three">
+                    <label class="label-info">
+                      <input class="checkbox-input visually-hidden" type="checkbox" value="250g" name="quantity_of_coffee" required>
+                      <span class="checkbox-input-inner">
+                        <span class="label-heading">250g</span>
+                        <span class="label-paragraph">Perfect for the solo drinker. Yields about<br>12 delicious cups.</span>
+                      </span>
+                    </label>
+                    <label class="label-info">
+                      <input class="checkbox-input visually-hidden" type="checkbox" value="500g" name="quantity_of_coffee" required>
+                      <span class="checkbox-input-inner">
+                        <span class="label-heading">500g</span>
+                        <span class="label-paragraph">Perfect option for a<br>couple. Yields<br>about 40 delectable cups.</span>
+                      </span>
+                    </label>
+                    <label class="label-info">
+                      <input class="checkbox-input visually-hidden" type="checkbox" value="1000G" name="quantity_of_coffee" required>
+                      <span class="checkbox-input-inner">
+                        <span class="label-heading">1000G</span>
+                        <span class="label-paragraph">Perfect for offices<br>and events. Yields about 90 delightful cups.</span>
+                      </span>
+                    </label>
+                  </div>
+                </section>
               </li>
-              <li class="create-plan-list-item">
-                <a class="form-links" href="#grindoption">04 Grind Option</a>
+
+              <li class="label-list-item">
+                <section class="checkbox-input-wrapper">
+                  <div class="btn-img-wrapper">
+                    <h3 class="checkbox-input-heading" id="deliveries">Want us to grind them?</h3>
+                    <button class="arrows-button" id="arrows-btn_four" type="button">
+                      <img src="img/up-down.svg" width="40" height="40" alt="">
+                    </button>
+                  </div>
+                  <div class="label-wrapper" id="label-wrapper-id_four">
+                    <label class="label-info">
+                      <input class="checkbox-input visually-hidden" type="checkbox" value="Wholebean" name="type_of_make" required>
+                      <span class="checkbox-input-inner">
+                        <span class="label-heading">Wholebean</span>
+                        <span class="label-paragraph">Best choice if you cherish the full sensory experience</span>
+                      </span>
+                    </label>
+                    <label class="label-info">
+                      <input class="checkbox-input visually-hidden" type="checkbox" value="Filter" name="type_of_make" required>
+                      <span class="checkbox-input-inner">
+                        <span class="label-heading">Filter</span>
+                        <span class="label-paragraph">For drip or pour-<br>over coffee methods such as V60 or Aeropress</span>
+                      </span>
+                    </label>
+                    <label class="label-info">
+                      <input class="checkbox-input visually-hidden" type="checkbox" value="Cafetiére" name="type_of_make" required>
+                      <span class="checkbox-input-inner">
+                        <span class="label-heading">Cafetiére</span>
+                        <span class="label-paragraph">Course ground<br>beans specially<br>suited for french<br>press coffee</span>
+                      </span>
+                    </label>
+                  </div>
+                </section>
               </li>
-              <li class="create-plan-list-item">
-                <a class="form-links" href="#deliveries">05 Deliveries</a>
+
+              <li class="label-list-item">
+                <section class="checkbox-input-wrapper">
+                  <div class="btn-img-wrapper">
+                    <h3 class="checkbox-input-heading" id="preferences">How often should we deliver?</h3>
+                    <button class="arrows-button" id="arrows-btn_five" type="button">
+                      <img src="img/up-down.svg" width="40" height="40" alt="">
+                    </button>
+                  </div>
+                  <div class="label-wrapper" id="label-wrapper-id_five">
+                    <label class="label-info">
+                      <input class="checkbox-input visually-hidden" type="checkbox" value="Every week" name="time_of_deliver" required>
+                      <span class="checkbox-input-inner">
+                        <span class="label-heading">Every week</span>
+                        <span class="label-paragraph">$7.20 per shipment. Includes free first-<br>class shipping.</span>
+                      </span>
+                    </label>
+                    <label class="label-info">
+                      <input class="checkbox-input visually-hidden" type="checkbox" value="Every 2 weeks" name="time_of_deliver" required>
+                      <span class="checkbox-input-inner">
+                        <span class="label-heading">Every 2 weeks</span>
+                        <span class="label-paragraph">$9.60 per shipment. Includes free<br>priority shipping.</span>
+                      </span>
+                    </label>
+                    <label class="label-info">
+                      <input class="checkbox-input visually-hidden" type="checkbox" value="Every month" name="time_of_deliver" required>
+                      <span class="checkbox-input-inner">
+                        <span class="label-heading">Every month</span>
+                        <span class="label-paragraph">$12.00 per shipment. Includes free priority shipping.</span>
+                      </span>
+                    </label>
+                  </div>
+                </section>
               </li>
-            </ol>
-            <ul class="tipo-card-box-list">
-              <!-- PREFERENCES  -->
-              <li class="card-box-item" id="preferences">
-                <div class="question-wrapper">
-                  <h3 class="question-heading">How do you drink your coffee?</h3>
-                  <button class="up-down-button" type="button"><img class="up-down-img" src="img/up-down.svg" width="40" height="40" alt=""></button>
-                </div>
-                <ul class="choose-option-list">
-                  <li class="option-list-item">
-                    <div class="choose-type-wrapper">
-                      <h4 class="choose-of-types">Capsule</h4>
-                      <p class="coffee-description">Compatible with Nespresso systems<br>and similar brewers</p>
-                    </div>
-                  </li>
-                  <li class="option-list-item">
-                    <div class="choose-type-wrapper">
-                      <h4 class="choose-of-types">Filter</h4>
-                      <p class="coffee-description">For pour over or<br>drip methods like Aeropress, Chemex, <br> and V60</p>
-                    </div>
-                  </li>
-                  <li class="option-list-item">
-                    <div class="choose-type-wrapper">
-                      <h4 class="choose-of-types">Espresso</h4>
-                      <p class="coffee-description">Dense and finely<br>ground beans for an intense, flavorful experience</p>
-                    </div>
-                  </li>
-                </ul>
-              </li>
-              <!-- BEANTYPE  -->
-              <li class="card-box-item" id="beantype">
-                <div class="question-wrapper">
-                  <h3 class="question-heading">What type of coffee?</h3>
-                  <button class="up-down-button" type="button"><img class="up-down-img" src="img/up-down.svg" width="40" height="40" alt=""></button>
-                </div>
-                <ul class="choose-option-list">
-                  <li class="option-list-item">
-                    <div class="choose-type-wrapper">
-                      <h4 class="choose-of-types">Single Origin</h4>
-                      <p class="coffee-description">Distinct, high quality<br>coffee from a specific family-owned farm</p>
-                    </div>
-                  </li>
-                  <li class="option-list-item">
-                    <div class="choose-type-wrapper">
-                      <h4 class="choose-of-types">Decaf</h4>
-                      <p class="coffee-description">Just like regular<br>coffee, except the<br>caffeine has been<br>removed</p>
-                    </div>
-                  </li>
-                  <li class="option-list-item">
-                    <div class="choose-type-wrapper">
-                      <h4 class="choose-of-types">Blended</h4>
-                      <p class="coffee-description">Combination of two<br>or three dark roasted<br>beans of organic<br>coffees</p>
-                    </div>
-                  </li>
-                </ul>
-              </li>
-              <!-- QUANTITY  -->
-              <li class="card-box-item" id="quantity">
-                <div class="question-wrapper">
-                  <h3 class="question-heading">How much would you like?</h3>
-                  <button class="up-down-button" type="button"><img class="up-down-img" src="img/up-down.svg" width="40" height="40" alt=""></button>
-                </div>
-                <ul class="choose-option-list">
-                  <li class="option-list-item">
-                    <div class="choose-type-wrapper">
-                      <h4 class="choose-of-types">250g</h4>
-                      <p class="coffee-description">Perfect for the solo<br>drinker. Yields about<br>12 delicious cups.</p>
-                    </div>
-                  </li>
-                  <li class="option-list-item">
-                    <div class="choose-type-wrapper">
-                      <h4 class="choose-of-types">500g</h4>
-                      <p class="coffee-description">Perfect option for a<br>couple. Yields<br>about 40 delectable<br>cups.</p>
-                    </div>
-                  </li>
-                  <li class="option-list-item">
-                    <div class="choose-type-wrapper">
-                      <h4 class="choose-of-types">1000g</h4>
-                      <p class="coffee-description">Perfect for offices<br>and events. Yields<br>about 90 delightful <br>cups.</p>
-                    </div>
-                  </li>
-                </ul>
-              </li>
-              <!-- GRINDOPTION  -->
-              <li class="card-box-item" id="grindoption">
-                <div class="question-wrapper">
-                  <h3 class="question-heading">Want us to grind them?</h3>
-                  <button class="up-down-button" type="button"><img class="up-down-img" src="img/up-down.svg" width="40" height="40" alt=""></button>
-                </div>
-                <ul class="choose-option-list">
-                  <li class="option-list-item">
-                    <div class="choose-type-wrapper">
-                      <h4 class="choose-of-types">Wholebean</h4>
-                      <p class="coffee-description">Best choice if you<br>cherish the full<br>sensory experience</p>
-                    </div>
-                  </li>
-                  <li class="option-list-item">
-                    <div class="choose-type-wrapper">
-                      <h4 class="choose-of-types">Filter</h4>
-                      <p class="coffee-description">For drip or pour-<br>over coffee<br>methods such as<br> V60 or Aeropress</p>
-                    </div>
-                  </li>
-                  <li class="option-list-item">
-                    <div class="choose-type-wrapper">
-                      <h4 class="choose-of-types">Cafetiére</h4>
-                      <p class="coffee-description">Course ground<br>beans specially<br>suited for french<br> press coffee</p>
-                    </div>
-                  </li>
-                </ul>
-              </li>
-              <!-- DELIVERIES  -->
-              <li class="card-box-item" id="deliveries">
-                <div class="question-wrapper">
-                  <h3 class="question-heading">How often should we deliver?</h3>
-                  <button class="up-down-button" type="button"><img class="up-down-img" src="img/up-down.svg" width="40" height="40" alt=""></button>
-                </div>
-                <ul class="choose-option-list">
-                  <li class="option-list-item">
-                    <div class="choose-type-wrapper">
-                      <h4 class="choose-of-types">Every week</h4>
-                      <p class="coffee-description">$7.20 per shipment. Includes free first-<br>class shipping.</p>
-                    </div>
-                  </li>
-                  <li class="option-list-item">
-                    <div class="choose-type-wrapper">
-                      <h4 class="choose-of-types">Every 2 weeks</h4>
-                      <p class="coffee-description">$9.60 per shipment. Includes free<br>priority shipping.</p>
-                    </div>
-                  </li>
-                  <li class="option-list-item">
-                    <div class="choose-type-wrapper">
-                      <h4 class="choose-of-types">Every month</h4>
-                      <p class="coffee-description">$12.00 per shipment. Includes free priority shipping.</p>
-                    </div>
-                  </li>
-                </ul>
-              </li>
+
             </ul>
-          </div>
 
-          <div class="info-main-wrapper">
-            <div class="plan-info-wrapper">
-              <span class="order-summary">Order Summary</span>
-              <p class="plan-info-text">“I drink my coffee as <span class="black-text">Filter</span>, with a <span class="black-text">Decaf</span> type of bean. <span class="black-text">250g</span> ground ala <span class="black-text">Cafetiére</span>, sent to me <span class="black-text">Every Week</span>.”</p>
+
+
+            <div class="info-main-wrapper">
+              <div class="plan-info-wrapper">
+                <span class="order-summary">Order Summary</span>
+                <p class="plan-info-text">“I drink my coffee as <span class="black-text black-text_one">_____</span>, with a <span class="black-text black-text_two">_____</span> type of bean. <span class="black-text black-text_three">_____</span> ground ala <span class="black-text black-text_four">_____</span>, sent to me <span class="black-text black-text_five">_____</span>.”</p>
+              </div>
+            </div>
+            <div class="button-wrapper-two">
+              <button class="button-create-plan" type="submit">Create me plan</button>
             </div>
           </div>
-
-          <div class="button-wrapper-two"><a href="#" class="main-button">Create me plan</a></div>
-
-
         </form>
-
       </div>
+
     </div>
 
   </main>
@@ -332,5 +375,6 @@
       </div>
     </div>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>

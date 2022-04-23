@@ -64,6 +64,17 @@ img {
   height: auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 
 /* CONTAINER  */
 .container {
@@ -615,6 +626,7 @@ img {
 }
 
 .main-img-about-us {
+  width: 710px;
   height: 596px;
 }
 
@@ -789,6 +801,22 @@ img {
   box-shadow: none;
 }
 
+.leaf-icon-create-plan {
+  position: absolute;
+}
+
+.create-plan-leaf {
+  top: 221px;
+  right: 0;
+  transform: translateX(59%);
+}
+
+.create-plan-leaf_two {
+  top: 50%;
+  left: 0;
+  transform: translateX(-60%);
+}
+
 .form-wrapper {
   display: flex;
   margin-bottom: 100px;
@@ -799,13 +827,13 @@ img {
   padding: 0;
   list-style: none;
   margin-right: auto;
+  padding-right: 30px;
 }
 
 .create-plan-list-item {
   padding: 0;
   margin: 0;
   list-style: none;
-  padding-left: 25px;
 }
 
 .card-box-item:not(:last-child) {
@@ -834,98 +862,126 @@ img {
   border-bottom: 3px dashed #C99B67;
 }
 
-.tipo-card-box-list {
-  padding: 0;
+
+/* FORM  */
+.create-plan-form {
+  position: relative;
+  display: flex;
+}
+
+.label-list {
+  display: flex;
+  flex-direction: column;
   margin: 0;
+  margin-bottom: 100px;
+  padding: 0;
   list-style: none;
 }
 
-.question-wrapper {
-  display: flex;
-  align-items: baseline;
-  cursor: pointer;
-
+.label-list-item:not(:last-child) {
+  margin-bottom: 60px;
 }
 
-.question-heading {
-  color: #000;
-  text-transform: uppercase;
-  font-size: 40px;
-  line-height: normal;
-  font-weight: 700;
+.btn-img-wrapper {
+  display: flex;
+  align-items: baseline;
+}
+
+.arrows-button {
+  display: flex;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.arrows-button-rotate {
+  transform: rotate(180deg);
+}
+
+.checkbox-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  border: none;
+}
+
+.label-wrapper_one {
+  display: flex;
+}
+
+.open {
+  display: none;
+}
+
+.label-wrapper {
+  display: none;
+}
+
+.label-wrapper-close {
+  display: flex;
+}
+
+.checkbox-input-heading {
   margin: 0;
   margin-bottom: 20px;
   margin-right: 44px;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 35px;
+  line-height: normal;
+  white-space: nowrap;
 }
 
-.up-down-button {
-  border: none;
-  background-color: transparent;
-  margin: 0;
-  padding: 0px;
-}
-
-.up-down-button:focus {
-  outline: none;
-}
-
-.up-down-img {
-  width: 40px;
-  height: 40px;
-}
-
-.choose-option-list {
-  padding: 0;
-  margin: 0;
+.checkbox-input-inner {
   display: flex;
-}
-.option-list-item {
-  flex-grow: 1;
-  min-height: 220px;
+  flex-direction: column;
+  padding-left: 16px;
+  padding-top: 30px;
   width: 208px;
-  padding: 0;
-  margin: 0;
-  list-style: none;
+  min-height: 220px;
   background-image: url(../img/card-box-bg.jpg);
-  background-position: center center;
 }
 
-.option-list-item:hover {
-  background-image: none;
-  background-color: #0A775F;
-  color: #fff;
-  transition: all 0.4s ease;
+.label-info {
+  cursor: pointer;
 }
 
-.option-list-item:not(:last-child) {
+.label-info:not(:last-child) {
   margin-right: 18px;
 }
 
-.choose-type-wrapper {
-  flex-grow: 1;
-  padding-top: 30px;
-  padding-left: 16px;
+.checkbox-input[type="radio"]:hover + .checkbox-input-inner {
+  background-image: none;
+  background-color: rgba(10, 119, 95, 1);
+  color: #fff;
+  transition: color 0.3s ease,
+  background-color 0.3s ease;
 }
 
-.choose-of-types {
-  padding: 0;
-  margin: 0;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  font-size: 24px;
-  line-height: normal;
-  font-weight: 500;
-}
-
-.choose-of-types:hover {
+.checkbox-input[type="checkbox"]:checked + .checkbox-input-inner {
+  background-image: none;
+  background-color: rgba(10, 119, 95, 1);
   color: #fff;
 }
 
-.coffee-description {
-  margin: 0;
+.label-heading {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.label-paragraph {
   font-size: 18px;
   line-height: 24px;
-  font-weight: 400;
+}
+
+.info-main-wrapper {
+  display: flex;
+  justify-content: end;
 }
 
 .plan-info-wrapper {
@@ -947,11 +1003,6 @@ img {
   text-transform: uppercase;
 }
 
-.info-main-wrapper {
-  display: flex;
-  justify-content: end;
-}
-
 .plan-info-text {
   margin: 0;
   font-size: 24px;
@@ -966,6 +1017,31 @@ img {
 .button-wrapper-two {
   display: flex;
   justify-content: end;
+}
+
+.button-create-plan {
+  min-width: 175px;
+  text-align: center;
+  border: none;
+  padding: 16px;
+  background-color: #0A775F;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 100px;
+  transition: transform 0.3s ease,
+  opacity 0.3s ease;
+}
+
+.button-create-plan:hover {
+  opacity: 0.8;
+}
+
+.button-create-plan:active {
+  transform: scale(0.9);
 }
 
 
@@ -993,7 +1069,7 @@ only screen and (                min-resolution: 2dppx) {
     background-image: url(../img/site-bg/hero-three@2x.jpg);
   }
 
-  .option-list-item {
+  .checkbox-input-inner {
     background-image: url(../img/card-box-bg@2x.jpg);
   }
 
