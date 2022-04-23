@@ -676,11 +676,16 @@ img {
   padding-bottom: 90px;
   padding-left: 143px;
   padding-right: 30px;
+  margin-bottom: 20px;
 }
 
 .hero-two-wrapper {
   position: relative;
   display: flex;
+}
+
+.about-usheading-paragraph-wrapper {
+  width: 639px;
 }
 
 .hero-two-main-heading-about-us {
@@ -689,7 +694,6 @@ img {
 }
 
 .hero-two-main-paragraph-about-us {
-  width: 639px;
   text-align: left;
   font-size: 18px;
   line-height: 30px;
@@ -732,54 +736,36 @@ img {
 }
 
 .hero-three-list-item-about-us {
+  position: relative;
+  min-height: 433px;
   padding-top: 45px;
   padding-bottom: 40px;
   padding-left: 20px;
   padding-right: 55px;
 }
 
-.country-list-item-content-uk {
-  background-image: url(../img/about-us-img/countries/UK.png);
-  background-repeat: no-repeat;
-  background-position: top right;
+.country-list-item-content {
+  padding-top: 95px;
 }
 
-.country-list-item-content-canada {
-  background-image: url(../img/about-us-img/countries/Canada.png);
-  background-repeat: no-repeat;
-  background-position: top right;
+.country-list-item-content-other {
+  padding-top: 142px;
 }
 
-.country-list-item-content-australia {
-  background-image: url(../img/about-us-img/countries/Australia.png);
-  background-repeat: no-repeat;
-  background-position: top right;
+.country-list-item-content-position {
+  position: absolute;
+  top: 45px;
+  right: 55px;
 }
 
 .hero-three-list-item-heading-about-us {
   margin: 0;
   margin-bottom: 10px;
-  padding-top: 105px;
-}
-
-.hero-three-list-item-heading-about-us-canada {
-  padding-top: 155px;
-}
-
-.hero-three-list-item-heading-about-us-australia {
-  padding-top: 155px;
 }
 
 .country-info-wrapper {
-  width: 141px;
-}
-
-.country-info-wrapper-canada {
-  width: 178px;
-}
-
-.country-info-wrapper-australia {
-  width: 156px;
+  display: flex;
+  flex-direction: column;
 }
 
 .country-info {
@@ -1005,18 +991,6 @@ only screen and (                min-resolution: 2dppx) {
 
   .hero-three {
     background-image: url(../img/site-bg/hero-three@2x.jpg);
-  }
-
-  .country-list-item-content-uk {
-    background-image: url(../img/about-us-img/countries/UK@2x.png);
-  }
-
-  .country-list-item-content-canada {
-    background-image: url(../img/about-us-img/countries/Canada@2x.png);
-  }
-
-  .country-list-item-content-australia {
-    background-image: url(../img/about-us-img/countries/Australia@2x.png);
   }
 
   .option-list-item {
