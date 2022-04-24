@@ -808,7 +808,7 @@ img {
 .create-plan-leaf {
   top: 221px;
   right: 0;
-  transform: translateX(59%);
+  transform: translateX(62%);
 }
 
 .create-plan-leaf_two {
@@ -952,12 +952,12 @@ img {
   margin-right: 18px;
 }
 
-.checkbox-input[type="radio"]:hover + .checkbox-input-inner {
-  background-image: none;
-  background-color: rgba(10, 119, 95, 1);
-  color: #fff;
-  transition: color 0.3s ease,
-  background-color 0.3s ease;
+.checkbox-input[type="checkbox"] + .checkbox-input-inner {
+  transition: transform 0.3s ease;
+}
+
+.checkbox-input[type="checkbox"]:hover + .checkbox-input-inner {
+  transform: scale(1.1);
 }
 
 .checkbox-input[type="checkbox"]:checked + .checkbox-input-inner {

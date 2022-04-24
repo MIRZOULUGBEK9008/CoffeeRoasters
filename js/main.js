@@ -35,6 +35,7 @@ elButton5.addEventListener("click", function () {
   elCloselabel5.classList.toggle("label-wrapper-close");
 });
 
+
 let elInput = document.querySelectorAll('input[type="checkbox"]');
 const elText1 = document.querySelector('.black-text_one');
 const elText2 = document.querySelector('.black-text_two');
