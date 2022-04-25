@@ -36,7 +36,7 @@ elButton5.addEventListener("click", function () {
 });
 
 
-let elInput = document.querySelectorAll('input[type="checkbox"]');
+let elInput = document.querySelectorAll('input[type="radio"]');
 const elText1 = document.querySelector('.black-text_one');
 const elText2 = document.querySelector('.black-text_two');
 const elText3 = document.querySelector('.black-text_three');

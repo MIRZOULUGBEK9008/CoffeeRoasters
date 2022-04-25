@@ -952,15 +952,15 @@ img {
   margin-right: 18px;
 }
 
-.checkbox-input[type="checkbox"] + .checkbox-input-inner {
+.checkbox-input[type="radio"] + .checkbox-input-inner {
   transition: transform 0.3s ease;
 }
 
-.checkbox-input[type="checkbox"]:hover + .checkbox-input-inner {
+.checkbox-input[type="radio"]:hover + .checkbox-input-inner {
   transform: scale(1.1);
 }
 
-.checkbox-input[type="checkbox"]:checked + .checkbox-input-inner {
+.checkbox-input[type="radio"]:checked + .checkbox-input-inner {
   background-image: none;
   background-color: rgba(10, 119, 95, 1);
   color: #fff;
