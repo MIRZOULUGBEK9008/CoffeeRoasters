@@ -957,8 +957,7 @@ img {
 .checkbox-input-inner {
   display: flex;
   flex-direction: column;
-  padding-left: 16px;
-  padding-top: 30px;
+  padding: 30px 16px;
   width: 208px;
   min-height: 220px;
   background-image: url(../img/card-box-bg.jpg);
