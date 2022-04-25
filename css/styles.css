@@ -78,8 +78,8 @@ img {
 
 /* CONTAINER  */
 .container {
-  max-width: 1440px;
   width: 100%;
+  max-width: 1440px;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
@@ -202,12 +202,12 @@ img {
 
 .main-hero-content {
   display: flex;
-  margin-right: auto;
   padding-left: 130px;
   margin-bottom: 20px;
+  justify-content: space-between;
 }
 
-.wrapper{
+.wrapper {
   padding-top: 116px;
   margin-right: 116px;
 }
@@ -234,23 +234,21 @@ img {
 .badge-img-wrapper {
   display: flex;
   position: relative;
+  margin-right: -50px;
 }
 
 .badge-img {
   position: absolute;
-  top: -80px;
-  left: 0;
-  transform: translateX(-50%);
-  width: 160px;
-  height: 160px;
-  object-fit: cover;
+  top: -82px;
+  left: -92px;
+  min-width: 212px;
+  min-height: 212px;
 }
 
 .main-img {
   width: 710px;
   height: 696px;
   object-fit: cover;
-  margin-right: -50px;
 }
 
 
@@ -883,8 +881,26 @@ img {
 }
 
 .btn-img-wrapper {
+  position: relative;
   display: flex;
   align-items: baseline;
+}
+
+.arrows-button_first {
+  transform: rotateX(180deg);
+}
+
+.arrows-button_first-rotate {
+  transform: rotateY(-180deg);
+}
+
+.arrows-button::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  content: "";
 }
 
 .arrows-button {
@@ -934,6 +950,10 @@ img {
   white-space: nowrap;
 }
 
+.checkbox-input-heading:hover {
+  cursor: pointer;
+}
+
 .checkbox-input-inner {
   display: flex;
   flex-direction: column;
@@ -957,7 +977,10 @@ img {
 }
 
 .checkbox-input[type="radio"]:hover + .checkbox-input-inner {
-  transform: scale(1.1);
+  background-image: none;
+  background-color: rgba(10, 119, 95, 0.3);
+  color: rgb(0, 0, 0);
+  transition: background-color 0.3s ease;
 }
 
 .checkbox-input[type="radio"]:checked + .checkbox-input-inner {
